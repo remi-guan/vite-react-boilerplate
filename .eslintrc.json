@@ -1,0 +1,64 @@
+{
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true
+  },
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "eslint-config-prettier"
+  ],
+  "plugins": [
+    "@typescript-eslint",
+    "eslint-plugin-prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2022,
+    "jsx": true,
+    "sourceType": "module",
+    "useJSXTextNode": true
+  },
+  "rules": {
+    "indent": [
+      "error",
+      2
+    ],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "trailingComma": "all"
+      }
+    ],
+    "no-plusplus": "off",
+    "comma-dangle": [
+      "error",
+      "always-multiline"
+    ],
+    "import/extensions": "off",
+    "@typescript-eslint/no-explicit-any": "off"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
+      }
+    }
+  }
+}

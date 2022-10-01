@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+}
+
+.layout {
+  border: 1px solid var(--semi-color-border);
+  height: 100vh;
+}
+
+.sider {
+   background-color: var(--semi-color-bg-1) ;
+
+  .nav {
+    max-width: 220px;
+    height: 100% ;
+  }
+}
+
+.content {
+  background-color: var(--semi-color-bg-0);
+  padding: 12px;
+  overflow: hidden;
+
+  > div.wrapper {
+    border-radius: 10px;
+    border: 1px solid var(--semi-color-border);
+    height: 100%;
+  }
+}
